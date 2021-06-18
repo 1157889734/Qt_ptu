@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>myline</class>
+ <widget class="QDialog" name="myline">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1023</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车站列表</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>31</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>971</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>车站名称中文</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>车站名称英文</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>上行站代码</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>下行站代码</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>上行站间距</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>下行站间距</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>上行开门侧</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>下行开门侧</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>上行预报站广播触发距离</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>下行预报站广播触发距离</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>上行到站广播触发距离</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>下行到站广播触发距离</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>上行越站</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>下行越站</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>31</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>31</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

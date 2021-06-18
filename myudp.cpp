@@ -1,14 +1,19 @@
 #include "myudp.h"
 #include "mywidget.h"
 #define PORT 50152
-static int socketFd = -1;
 
 myudp::myudp(QObject *parent) : QObject(parent)
 {
-    //udpInit();
+    udpInit();
     //startThread(&pthread_fd,this->receive_proc,this);
-    receive_data();
-
+    //receive_data();
+    init();
+}
+void myudp::init()
+{
+    dataTimer = new QTimer(this);
+    connect(dataTimer,SIGNAL(timeout()),this,SLOT(receive_data()));
+    dataTimer->start(1000);
 }
 int myudp::udpInit()
 {
@@ -18,40 +23,32 @@ int myudp::udpInit()
     {
         return -1;
     }
+    return 0;
 }
 void myudp::read_data()
 {
-    //memset(databuf,0,sizeof(databuf));
-
     while(myudpSocket->hasPendingDatagrams())
     {
         QByteArray datagram;
         datagram.resize(myudpSocket->pendingDatagramSize());
         myudpSocket->readDatagram(datagram.data(),datagram.size());
-        QString msg=datagram.data();
-//           myudpSocket->readDatagram(databuf,1024);
-//        for(int i=0;i<64;i++)
-//        {
-//            qDebug()<<"data:"<<databuf[i];
-//        }
-        //ReceiceTextEdit->insertPlainText(msg);
-        qDebug()<<"1111111111111"<<msg<<endl;
+        QByteArray data = datagram.toHex();
+        char buf[256];
+        int len = data.size();
+        int len_buf=sizeof(buf);
+        int real_len = qMin(len,len_buf);
+        memcpy(buf,data,real_len);
+        int i ;
+        for(i = 0;i<real_len;i++)
+        {
+            databuf[i]=buf[i];
+        }
     }
 
 }
-int myudp::receive_data()
-{
-
-    int res = -1;
-    while (res < 0)
-    {
-        res = udpInit();
-    }
-    while (1)
-    {
-        //read_data();
-    }
-    return 0;
+void myudp::receive_data()
+{   
+    read_data();
 }
 int myudp::startThread(pthread_t *fd, void *(*fun)(void *), void *arg)
 {
@@ -63,7 +60,7 @@ int myudp::startThread(pthread_t *fd, void *(*fun)(void *), void *arg)
         perror("pthread_create");
         return -1;
     }
-
     return 1;
 }
+
 

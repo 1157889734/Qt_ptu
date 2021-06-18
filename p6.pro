@@ -28,14 +28,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mywidget.cpp \
-    myudp.cpp
+    myudp.cpp \
+    myline.cpp \
 
 HEADERS += \
         mywidget.h \
-    myudp.h
+    myudp.h \
+    myline.h \
 
 FORMS += \
-        mywidget.ui
+        mywidget.ui \
+    myline.ui
 
 RESOURCES += \
     res.qrc

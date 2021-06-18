@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1078</width>
-    <height>707</height>
+    <width>1119</width>
+    <height>716</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <x>0</x>
      <y>0</y>
      <width>1121</width>
-     <height>501</height>
+     <height>481</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -44,8 +44,8 @@ QTabBar:tab{height:30}</string>
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>1121</width>
-       <height>661</height>
+       <width>1081</width>
+       <height>451</height>
       </rect>
      </property>
      <property name="currentIndex">
@@ -61,7 +61,7 @@ QTabBar:tab{height:30}</string>
          <x>-10</x>
          <y>0</y>
          <width>1061</width>
-         <height>461</height>
+         <height>421</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -75,6 +75,106 @@ QTabBar:tab{height:30}</string>
         <attribute name="title">
          <string>设置车站信息</string>
         </attribute>
+        <widget class="QTableWidget" name="tableWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>1101</width>
+           <height>581</height>
+          </rect>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>车站名称中文</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>车站名称英文</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>上行站代码</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>下行站代码</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>上行站间距</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>下行站间距</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>上行开门侧</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>下行开门侧</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>上行预报站广播触发距离</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>下行预报站广播触发距离</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>上行到站广播触发距离</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>下行到站广播触发距离</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>上行越站</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>下行越站</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
        </widget>
        <widget class="QWidget" name="tab_14">
         <attribute name="title">
@@ -98,7 +198,7 @@ QTabBar:tab{height:30}</string>
          <x>0</x>
          <y>0</y>
          <width>971</width>
-         <height>461</height>
+         <height>441</height>
         </rect>
        </property>
        <property name="currentIndex">
@@ -122,36 +222,456 @@ QTabBar:tab{height:30}</string>
     <attribute name="title">
      <string>广播控制盒</string>
     </attribute>
+    <widget class="QTableWidget" name="tableWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>设备名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>所在列车号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备ip地址</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>起始站代码</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>终点站代码</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>当前站代码</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>下一站代码</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>对讲报警器编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>话筒音量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>广播监听音量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>对讲监听音量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>运行反向</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>运行状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>版本号</string>
+      </property>
+     </column>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_3">
     <attribute name="title">
      <string>动态地图</string>
     </attribute>
+    <widget class="QTableWidget" name="tableWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>设备名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>所在列车号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备ip地址</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>背光亮度</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设定背光</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>运行状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>版本信息</string>
+      </property>
+     </column>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_4">
     <attribute name="title">
      <string>数字功率放大器</string>
     </attribute>
+    <widget class="QTableWidget" name="tableWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>设备名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>所在列车号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>当前播放优先级</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>音量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>检测性能</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>检测状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>运行状态</string>
+      </property>
+     </column>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_5">
     <attribute name="title">
      <string>LED目的地显示屏</string>
     </attribute>
+    <widget class="QTableWidget" name="tableWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>设备名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>所在列车号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备ip地址</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>模式切换</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>模式状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>运行状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>版本信息</string>
+      </property>
+     </column>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_6">
     <attribute name="title">
      <string>客室LED显示屏</string>
     </attribute>
+    <widget class="QTableWidget" name="tableWidget_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>设备名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>所在列车号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备ip地址</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>检测性能</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>检测状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>运行状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>版本信息</string>
+      </property>
+     </column>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_7">
     <attribute name="title">
      <string>紧急报警器</string>
     </attribute>
+    <widget class="QTableWidget" name="tableWidget_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>设备名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>所在列车号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备ip地址</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>报警状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>话筒音量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>对讲监听音量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>运行状态</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>版本信息</string>
+      </property>
+     </column>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_8">
     <attribute name="title">
      <string>设备故障</string>
     </attribute>
+    <widget class="QTableWidget" name="tableWidget_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>日期</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>车厢编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>状态</string>
+      </property>
+     </column>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_9">
     <attribute name="title">
@@ -263,6 +783,19 @@ QTabBar:tab{height:30}</string>
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>480</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车站编辑</string>
    </property>
   </widget>
  </widget>
